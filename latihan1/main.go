@@ -9,7 +9,7 @@ func luasTrapesium(a, b, t float64) float64 {
 }
 
 func isPrime(n int) bool {
-	for i := 2; i < n; i++ {
+	for i := 3; i*i <= n; i += 2 {
 		if n%i == 0 {
 			return false
 		}
